@@ -7,13 +7,13 @@ export class Arial extends Font {
         var size = this.fontSize(),
                 delta = size == 13 ? 3 : 2;
         return size + delta;
-    },
+    }
 
     minLineHeight() {
         var size = this.fontSize(),
             delta = size == 14 ? 2 : 3;
         return size + delta;
-    },
+    }
 
     capHeight(){
         //Проверено для шрифтов 8-16
@@ -29,12 +29,12 @@ export class Arial extends Font {
         }
 
         return size + delta;
-    },
+    }
 
     descent(){
         //Проверено для шрифтов 8-16
         return this.fontSize() < 13 ? 2 : 3;
-    },
+    }
 
     ascentOverCap(){
         //Проверено для шрифтов 8-16

@@ -2,12 +2,11 @@
 export class Font{
 	constructor(font){
 		var matches = font.match(/^(\d+)px(?:\/(\d+)px)?\s+([A-Z].*)$/i),
-            family = matches[3].toLowerCase(),
-                fontCls = this._fonts[family] || this;
+            family = matches[3].toLowerCase();
 
-        this.fontFamily = family;
-        this.fontSize = +matches[1];
-        this.lineHeight = +matches[2];
+        this._fontFamily = family;
+        this._fontSize = +matches[1];
+        this._lineHeight = +matches[2];
 	}
 	
     /**
